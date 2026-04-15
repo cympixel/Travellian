@@ -1,0 +1,46 @@
+@use '../helpers' as *;
+
+.card-4{
+    width: rem(365);
+    height: rem(570);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: var(--radius-img);
+    transition: var(--transition-duration);
+   
+
+    &--1{
+        background-image: url(../img/slider-4/1.webp);
+        @include tablet{
+            background-position: 0 50%;
+        }
+    }
+    &--2{
+        background-image: url(../img/slider-4/2.webp);
+        @include tablet{
+            background-position: 0 50%;
+        }
+    }
+    &--3{
+        background-image: url(../img/slider-4/3.webp);
+        @include tablet{
+            background-position: 0 50%;
+        }
+    }
+    &--4{
+        background-image: url(../img/slider-4/4.webp);
+        @include tablet{
+            background-position: 0 50%;
+        }
+    }
+
+    &:hover{
+        transform: translateY(-37px);
+        
+    }
+
+    @include tablet{
+        pointer-events: none;
+        width: 100%;
+    }
+}

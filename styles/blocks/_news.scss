@@ -1,0 +1,61 @@
+@use '../helpers' as *;
+
+.news{
+    margin: 0 auto;
+    border-radius: rem(26);
+    max-width: rem(1262);
+    transform: translateY(50%);
+    background-color: var(--color-white);
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.3);
+
+    @include laptop{
+        transform: translateY(-5%);
+    }
+    
+    &__inner{
+        padding: rem(60) rem(80);
+        display: flex;
+        gap: rem(100);
+        @include laptop{
+            flex-direction: column;
+        }
+    }
+    &__title{
+        color: var(--color-base);
+    }
+    &__form{
+        display: flex;
+        gap: rem(32);
+        flex-wrap: wrap;
+        align-items: end;
+
+        @include mobile{
+            justify-content: center;
+        }
+
+        &-group{
+            display: grid;
+            gap: rem(16);
+        }
+        &-input{
+            background-color: #FFE8D4;
+            padding:fluid(24, 20) fluid(40, 25);
+            border: none;
+            border-radius: var(--radius-btns);
+
+            
+
+            
+            
+            &::placeholder{
+                color: var(--color-orange);
+            }
+        }
+        
+    }
+    &__btn{
+        padding: fluid(24.5, 20) fluid(35, 25);
+
+        
+    }
+}

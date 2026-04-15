@@ -1,0 +1,73 @@
+@use '../helpers' as *;
+
+.blog{
+    padding-block: rem(140);
+    @include tablet{
+        padding-block: rem(100);
+    }
+    @include mobile{
+        padding-block: rem(80);
+    }
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        gap: rem(100);
+
+    }
+
+    &__main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: rem(32);
+        align-items: center;
+        color: var(--color-black-accent);
+
+        @include tablet{
+            grid-template-columns: 1fr;
+        }
+
+       
+    }
+    &__img{
+        width: 100%;
+        max-height: rem(873);
+        border-radius: var(--radius-img);
+    }
+
+    &__info{
+        display: grid;
+        gap: rem(24);
+         &-title{
+            font-size: rem(54);
+
+            @include mobile{
+                font-size: rem(40);
+            }
+        }
+
+        &-text{
+            line-height: rem(42);
+        }
+
+        &-link{
+            width: rem(165);
+            position: relative;
+            color: var(--color-orange);
+            transition: var(--transition-duration);
+
+            &::after{
+                content: '';
+                background-image: url(../img/arrow-blog.svg);
+                position: absolute;
+                width: rem(28);
+                height: rem(15);
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            &:hover{
+                color: #e04523;
+            }
+        }
+    }
+}

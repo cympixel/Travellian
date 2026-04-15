@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travellian</title>
+    <meta name="description" content="Travellian - ваше идеальное путешествие. Бронируйте туры и исследуйте мир вместе с нами.">
+    <meta property="og:title" content="Travellian - Travel Agency">
+    
+
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.webp" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.webp" />
+    <meta name="apple-mobile-web-app-title" content="Travellian" />
+    <link rel="manifest" href="img/favicon/site.webmanifest" />
+
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./styles/main.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__inner container">
+            <div class="header__menu">
+                <a href="#" class="header__logo">
+                    <img src="./img/Logo.svg" alt="Travellian">
+                </a>
+                <div class="header__overlay" data-js-header-overlay>
+                    <nav class="header__nav">
+                        <ul class="header__nav-list">
+                            <li>
+                                <a href="#explore" class="header__nav-link">Explore</a>
+                            </li>
+                            <li>
+                                <a href="#price" class="header__nav-link">Pricing</a>
+                            </li>                 
+                            <li>
+                                <a href="#blog" class="header__nav-link">Blog</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header__auth">
+                        <a href="#" class="header__login">Login</a>
+                        <a href="#" class="header__sign-up accent-btn">Sign up</a>
+                    </div>
+                </div>
+                <button
+                    class="burger-button"
+                    type="button"
+                    aria-label="Open menu"
+                    title="Open menu"
+                    data-js-header-burger-button
+                >
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                    <span class="burger-button__line"></span>
+                </button>
+            </div>
+            <div class="header__body">
+                <div class="header__title ">
+                    <h1>Start your unforgettable 
+                        <br>journey with us.</h1>
+                    <p>The best travel for your jouney begins now</p>
+                </div>
+                <div class="header__body-form">
+                    <form class="form">
+                        <div class="form__inputs">
+                            <div class="form-group">
+                                <label for="destination">Destination</label>
+                                <input type="text" id="destination" name="destination" placeholder="Dubai" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="person">Person</label>
+                                <input type="number" id="person" name="person" placeholder="2">
+                            </div>
+                            <div class="form-group">
+                                <label for="checkin">Check In</label>
+                                <input type="date" id="checkin" name="checkin">
+                            </div>
+                            <div class="form-group">
+                                <label for="checkout">Check Out</label>
+                                <input type="date" id="checkout" name="checkout">
+                            </div>
+                        </div>
+                        <button type="submit" class="form__btn accent-btn">
+                            <span>
+                                Book Now
+                            </span>
+                        </button>
+                            </form>
+                </div>
+            </div>
+            
+        </div>
+    </header>
+    <main>
+        <section class="slider popular-destinations" id="explore">
+            <div class="slider__inner container">
+                <div class="slider__title">
+                    <div class="title">
+                            <h2>Popular Destinations</h2>
+                            <p>Most popular destinations around the world, from historical places to natural wonders.</p>
+                            
+                    </div>
+                    <div class="arrows slider__arrows">
+                            <button 
+                            class="slider__arrow-right slider__arrow-left-1 accent-btn" 
+                            type="button"
+                            aria-label="Left Slide"
+                            title="Left Slide">
+                                <img src="./img/arrow-left.svg" alt="">
+                            </button>
+                            <button class="slider__arrow-right slider__arrow-right-1 accent-btn"
+                            type="button"
+                            aria-label="Left Slide"
+                            title="Left Slide">
+                                <img src="./img/arrow-right.svg" alt="">
+                            </button>
+                    </div>
+                </div>
+
+                <div class="slider__slides">
+                    <div class="swiper-1">
+                    <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card-1 card-1--1">
+                                    <h3 class="card-1-title">Monument of Berlin</h3>
+                                    <p class="card-1-text">
+                                        <span class="card-1-marker"></span>Berlin, Germany</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-1 card-1--2">
+                                    <h3 class="card-1-title">Millennium Bridge</h3>
+                                    <p class="card-1-text">
+                                        <span class="card-1-marker"></span>London, United Kingdom</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-1 card-1--3">
+                                    <h3 class="card-1-title">Rialto Bridge</h3>
+                                    <p class="card-1-text">
+                                        <span class="card-1-marker"></span>Venice, Italy</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-1 card-1--4">
+                                    <h3 class="card-1-title">Sea of Orange Tiles</h3>
+                                    <p class="card-1-text">
+                                        <span class="card-1-marker"></span>
+                                        Lisbon, Portugal
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-1 card-1--1">
+                                    <h3 class="card-1-title">Monument of Berlin</h3>
+                                    <p class="card-1-text">
+                                        <span class="card-1-marker"></span>Berlin, Germany</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-1 card-1--2">
+                                    <h3 class="card-1-title">Millennium Bridge</h3>
+                                    <p class="card-1-text">
+                                        <span class="card-1-marker"></span>London, United Kingdom</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-1 card-1--3">
+                                    <h3 class="card-1-title">Rialto Bridge</h3>
+                                    <p class="card-1-text">
+                                        <span class="card-1-marker"></span>Venice, Italy</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-1 card-1--4">
+                                    <h3 class="card-1-title">Sea of Orange Tiles</h3>
+                                    <p class="card-1-text">
+                                        <span class="card-1-marker"></span>
+                                        Lisbon, Portugal
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-1 card-1--1">
+                                    <h3 class="card-1-title">Monument of Berlin</h3>
+                                    <p class="card-1-text">
+                                        <span class="card-1-marker"></span>Berlin, Germany</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-1 card-1--2">
+                                    <h3 class="card-1-title">Millennium Bridge</h3>
+                                    <p class="card-1-text">
+                                        <span class="card-1-marker"></span>London, United Kingdom</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-1 card-1--3">
+                                    <h3 class="card-1-title">Rialto Bridge</h3>
+                                    <p class="card-1-text">
+                                        <span class="card-1-marker"></span>Venice, Italy</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-1 card-1--4">
+                                    <h3 class="card-1-title">Sea of Orange Tiles</h3>
+                                    <p class="card-1-text">
+                                        <span class="card-1-marker"></span>
+                                        Lisbon, Portugal
+                                    </p>
+                                </div>
+                            </div>
+    
+    
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+         <section class="slider slider--2 pricing" id="price">
+            <div class="slider__inner container">
+                <div class="slider__title">
+                    <div class="arrows slider__arrows">
+                            <button 
+                            class="slider__arrow-right slider__arrow-left-2 accent-btn" 
+                            type="button"
+                            aria-label="Left Slide"
+                            title="Left Slide">
+                                <img src="./img/arrow-left.svg" alt="">
+                            </button>
+                            <button class="slider__arrow-right slider__arrow-right-2 accent-btn"
+                            type="button"
+                            aria-label="Left Slide"
+                            title="Left Slide">
+                                <img src="./img/arrow-right.svg" alt="">
+                            </button>
+                    </div>
+                    <div class="title title--right">
+                            <h2>Special Offer</h2>
+                            <p>Check out our special offer and discounts</p>                 
+                    </div>
+                </div>
+
+                <div class="slider__slides">
+                    <div class="swiper-2">
+                    <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card-2 card-2--1">
+                                    <div class="card-2__info">
+                                        <div class="card-2__title">
+                                            <h3>Lisbon, Portugal</h3>
+                                            <div class="card-2__stars stars">
+                                              <span></span>
+                                              <span></span>
+                                              <span></span>
+                                              <span></span>
+                                              <span></span>
+                                            </div>
+                                        </div>
+                                        <p class="card-2__text">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.</p>
+                                        <div class="card-2__details">
+                                            <div class="card-2__price">
+                                                from
+                                                <span class="card-2__value">€500</span>
+                                            </div>
+                                            <a href="#" class="card-2__btn accent-btn">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-2 card-2--2">
+                                    <div class="card-2__info">
+                                        <div class="card-2__title">
+                                            <h3>Lisbon, Portugal</h3>
+                                            <div class="card-2__stars stars">
+                                              <span></span>
+                                              <span></span>
+                                              <span></span>
+                                              <span></span>
+                                              <span></span>
+                                            </div>
+                                        </div>
+                                        <p class="card-2__text">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.</p>
+                                        <div class="card-2__details">
+                                            <div class="card-2__price">
+                                                from
+                                                <span class="card-2__value">€500</span>
+                                            </div>
+                                            <a href="#" class="card-2__btn accent-btn">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-2 card-2--3">
+                                    <div class="card-2__info">
+                                        <div class="card-2__title">
+                                            <h3>Lisbon, Portugal</h3>
+                                            <div class="card-2__stars stars">
+                                              <span></span>
+                                              <span></span>
+                                              <span></span>
+                                              <span></span>
+                                              <span></span>
+                                            </div>
+                                        </div>
+                                        <p class="card-2__text">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.</p>
+                                        <div class="card-2__details">
+                                            <div class="card-2__price">
+                                                from
+                                                <span class="card-2__value">€500</span>
+                                            </div>
+                                            <a href="#" class="card-2__btn accent-btn">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-2 card-2--1">
+                                    <div class="card-2__info">
+                                        <div class="card-2__title">
+                                            <h3>Lisbon, Portugal</h3>
+                                            <div class="card-2__stars stars">
+                                              <span></span>
+                                              <span></span>
+                                              <span></span>
+                                              <span></span>
+                                              <span></span>
+                                            </div>
+                                        </div>
+                                        <p class="card-2__text">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.</p>
+                                        <div class="card-2__details">
+                                            <div class="card-2__price">
+                                                from
+                                                <span class="card-2__value">€500</span>
+                                            </div>
+                                            <a href="#" class="card-2__btn accent-btn">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-2 card-2--2">
+                                    <div class="card-2__info">
+                                        <div class="card-2__title">
+                                            <h3>Lisbon, Portugal</h3>
+                                            <div class="card-2__stars stars">
+                                              <span></span>
+                                              <span></span>
+                                              <span></span>
+                                              <span></span>
+                                              <span></span>
+                                            </div>
+                                        </div>
+                                        <p class="card-2__text">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.</p>
+                                        <div class="card-2__details">
+                                            <div class="card-2__price">
+                                                from
+                                                <span class="card-2__value">€500</span>
+                                            </div>
+                                            <a href="#" class="card-2__btn accent-btn">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="card-2 card-2--3">
+                                    <div class="card-2__info">
+                                        <div class="card-2__title">
+                                            <h3>Lisbon, Portugal</h3>
+                                            <div class="card-2__stars stars">
+                                              <span></span>
+                                              <span></span>
+                                              <span></span>
+                                              <span></span>
+                                              <span></span>
+                                            </div>
+                                        </div>
+                                        <p class="card-2__text">5 nights and 4 days in 5 star hotel, breakfast and lunch included. Very popular during the renaissance. Passage and going through the cites of the world in classical literature.</p>
+                                        <div class="card-2__details">
+                                            <div class="card-2__price">
+                                                from
+                                                <span class="card-2__value">€500</span>
+                                            </div>
+                                            <a href="#" class="card-2__btn accent-btn">Details</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blog" id="blog">
+            <div class="blog__inner container">
+                <div class="title">
+                                <h2>Our Blog</h2>
+                                <p>An insight the incredible experience in the world</p>
+                </div>
+                <div class="blog__main">
+                    <img loading="lazy" src="./img/blog-bg.webp" alt="" class="blog__img">
+                    <div class="blog__info">
+                        <h3 class="blog__info-title">Beautiful Italy <br>
+                            Let’s travel</h3>
+                        <p class="blog__info-text">
+                            But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness. No one rejects, dislike, or avoids plasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremly painful. Nor again is there anyone who loves or pursues.
+                        </p>
+                        <a href="" class="blog__info-link">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="planners container">
+            <div class="planners__inner">
+                <div class="planners__title title title--link">
+                    <h2>Trip Planners</h2>
+                    <p>20 years from now you will be more disappointed by the things that you didn’t do. Stop regretting and start travelling, start throwing off the bowlines.</p>
+                    <a href="#" class="title__link accent-btn">View all trip plans</a>
+                </div>
+                <div class="planners__slider">
+                    <div class="swiper-3">
+                        <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">        
+                                    <div class="card-3 card-3--1">
+                                        <div class="card-3__info">
+                                            <div class="card-3__info-top">
+                                                <p class="card-3__info-subtitle">Guided Tour</p>
+                                                <p class="card-3__info-price">€99/Day</p>
+                                            </div>
+                                            <h3 class="card-3__info-title">Paris City Tour</h3>
+                                            <div class="card-3__info-bottom">
+                                                <div class="stars">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <p class="card-3__info-days">7 Days tour</p>
+                                            </div>
+                                        </div>
+                                    </div>               
+                                </div>
+                                <div class="swiper-slide">        
+                                    <div class="card-3 card-3--2">
+                                        <div class="card-3__info">
+                                            <div class="card-3__info-top">
+                                                <p class="card-3__info-subtitle">Guided Tour</p>
+                                                <p class="card-3__info-price">€99/Day</p>
+                                            </div>
+                                            <h3 class="card-3__info-title">Paris City Tour</h3>
+                                            <div class="card-3__info-bottom">
+                                                <div class="stars">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <p class="card-3__info-days">7 Days tour</p>
+                                            </div>
+                                        </div>
+                                    </div>               
+                                </div>
+                                <div class="swiper-slide">        
+                                    <div class="card-3 card-3--3">
+                                        <div class="card-3__info">
+                                            <div class="card-3__info-top">
+                                                <p class="card-3__info-subtitle">Guided Tour</p>
+                                                <p class="card-3__info-price">€99/Day</p>
+                                            </div>
+                                            <h3 class="card-3__info-title">Paris City Tour</h3>
+                                            <div class="card-3__info-bottom">
+                                                <div class="stars">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <p class="card-3__info-days">7 Days tour</p>
+                                            </div>
+                                        </div>
+                                    </div>               
+                                </div>
+                                 <div class="swiper-slide">        
+                                    <div class="card-3 card-3--4">
+                                        <div class="card-3__info">
+                                            <div class="card-3__info-top">
+                                                <p class="card-3__info-subtitle">Guided Tour</p>
+                                                <p class="card-3__info-price">€99/Day</p>
+                                            </div>
+                                            <h3 class="card-3__info-title">Paris City Tour</h3>
+                                            <div class="card-3__info-bottom">
+                                                <div class="stars">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                </div>
+                                                <p class="card-3__info-days">7 Days tour</p>
+                                            </div>
+                                        </div>
+                                    </div>               
+                                </div>
+                                
+                                           
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+         <section class="slider slider--3">
+            <div class="slider__inner container">
+                <div class="slider__title">  
+                    <div class="title">
+                            <h2>Destination Gallery</h2>
+                            <p>Our photo gallery on trip</p>                 
+                    </div>
+                    <div class="arrows slider__arrows">
+                            <button 
+                            class="slider__arrow-right slider__arrow-left-3 accent-btn" 
+                            type="button"
+                            aria-label="Left Slide"
+                            title="Left Slide">
+                                <img src="./img/arrow-left.svg" alt="">
+                            </button>
+                            <button class="slider__arrow-right slider__arrow-right-3 accent-btn"
+                            type="button"
+                            aria-label="Left Slide"
+                            title="Left Slide">
+                                <img src="./img/arrow-right.svg" alt="">
+                            </button>
+                    </div>
+                </div>
+
+                <div class="slider__slides">
+                    <div class="swiper-4">
+                    <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card-4 card-4--1"></div>
+                            </div>  
+                            <div class="swiper-slide">
+                                <div class="card-4 card-4--2"></div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <div class="card-4 card-4--3"></div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <div class="card-4 card-4--4"></div>
+                            </div>    
+                                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <section class="slider slider--4">
+            <div class="slider__inner container">
+                 
+                    <div class="title">
+                            <h2>Traveler’s Experiences</h2>
+                            <p>Here some awesome feedback from our travelers</p>                 
+                    </div>
+                    
+                <div class="slider__slides">
+                    <div class="swiper-5">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="card-5 card-5--1">
+                                    <div class="card-5__icon">
+                                        <img src="./img/slider-5/1.webp" alt="Human">
+                                    </div>
+                                    <div class="card-5__info">
+                                        <p class="card-5__text">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.</p>
+                                        <div class="stars">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                        </div>
+                                        <div class="card-5__person">
+                                            <span class="card-5__name">John Doe</span>
+                                            <span class="card-5__prof">Accountant</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="swiper-slide">
+                                <div class="card-5 card-5--1">
+                                    <div class="card-5__icon">
+                                        <img src="./img/slider-5/2.webp" alt="Human">
+                                    </div>
+                                    <div class="card-5__info">
+                                        <p class="card-5__text">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.</p>
+                                        <div class="stars">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                        </div>
+                                        <div class="card-5__person">
+                                            <span class="card-5__name">John Smith</span>
+                                            <span class="card-5__prof">Journalist, HWO News</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="swiper-slide">
+                                <div class="card-5 card-5--1">
+                                    <div class="card-5__icon">
+                                        <img src="./img/slider-5/3.webp" alt="Human">
+                                    </div>
+                                    <div class="card-5__info">
+                                        <p class="card-5__text">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system and expound the actual teachings of the great explorer of the truth, the master- builder of human happiness.</p>
+                                        <div class="stars">
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                                    <span></span>
+                                        </div>
+                                        <div class="card-5__person">
+                                            <span class="card-5__name">Tamara Bellis</span>
+                                            <span class="card-5__prof">Managing Director, JTH</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>  
+
+                                       
+                        </div>
+                    </div>
+                </div>
+                <div class="arrows slider__arrows">
+                            <button 
+                            class="slider__arrow-right slider__arrow-left-4 accent-btn" 
+                            type="button"
+                            aria-label="Left Slide"
+                            title="Left Slide">
+                                <img src="./img/arrow-left.svg" alt="">
+                            </button>
+                            <button class="slider__arrow-right slider__arrow-right-4 accent-btn"
+                            type="button"
+                            aria-label="Left Slide"
+                            title="Left Slide">
+                                <img src="./img/arrow-right.svg" alt="">
+                            </button>
+                    </div>
+            </div>
+        </section>
+        <div class="news">
+            <div class="news__inner">
+                <h2 class="news__title">Our Newsletter</h2>
+                <form class="news__form">
+                    <div class="news__form-group">
+                        <label for="email" class="news__form-label">Email</label>
+                        <input class="news__form-input" type="email" placeholder="Enter your email" id="email">
+                    </div>
+                    <button class="news__btn accent-btn" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer__inner container">
+                <ul class="footer__menu">
+                    <li class="footer__menu-item footer__menu-logo">
+                            <img src="./img/Logo.svg" alt="Travellian">
+                            <span class="footer__cpr">Copyright © Travellian 2020 All rights reserved</span>
+                    </li>
+                    <li class="footer__menu-item">
+                        <div class="footer__menu-title">Menu</div>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-list-item">
+                                <a href="">
+                                    
+                                    Home
+                                </a>
+                            </li>
+                            <li class="footer__menu-list-item">
+                                <a href="#explore">
+                                    
+                                    Explore
+                                </a>
+                            </li>    
+                            <li class="footer__menu-list-item">
+                                <a href="#price">
+                                    
+                                    Pricing
+                                </a>
+                            </li>
+                            <li class="footer__menu-list-item">
+                                <a href="#blog">
+                                    
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__menu-item">
+                        <div class="footer__menu-title">Information</div>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-list-item">
+                                <a href="">
+                                    
+                                    Destinations
+                                </a>
+                            </li>
+                            <li class="footer__menu-list-item">
+                                <a href="">
+                                    
+                                    Supports
+                                </a>
+                            </li>
+                            <li class="footer__menu-list-item">
+                                <a href="">
+                                    
+                                    Terms & Conditions
+                                </a>
+                            </li>
+                            <li class="footer__menu-list-item">
+                                <a href="">
+                                    
+                                    Privacy
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__menu-item">
+                        <div class="footer__menu-title">Contact Info</div>
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-list-item">
+                                <a href="">
+                                    
+                                    +123 456 789
+                                </a>
+                            </li>
+                            <li class="footer__menu-list-item">
+                                <a href="">
+                                    
+                                    info@travellian.com
+                                </a>
+                            </li>
+                            <li class="footer__menu-list-item">
+                                <a href="">
+
+                                    1245, New Yourk, USA
+                                </a>
+                                    
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="footer__menu-item">
+                        <div class="footer__menu-title">Follow us on</div>
+                        <div class="footer__menu-soc1als">
+                            <a href="" class="footer__menu-socials-item">
+                                <img src="./img/socials/facebook 1.svg" alt="facebook">
+                            </a>
+                            <a href="" class="footer__menu-socials-item">
+                                <img src="./img/socials/pinterest 1.svg" alt="pinterest">
+                            </a>
+                            <a href="" class="footer__menu-socials-item">
+                                <img src="./img/socials/instagram 1.svg" alt="instagram">
+                            </a>
+                            <a href="" class="footer__menu-socials-item">
+                                <img src="./img/socials/twitter 1.svg" alt="twitter">
+                            </a>
+                        </div>
+                    </li>
+                </ul>  
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

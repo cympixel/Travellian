@@ -1,0 +1,73 @@
+@use '../helpers' as *;
+
+.title{
+     display: grid;
+     gap: rem(52);
+
+     
+    h2{
+        position: relative;
+        &::after{
+            content: '';
+            position: absolute;
+            width:3em;
+            height: rem(3);
+            background-color: var(--color-orange);
+            bottom: rem(-20);
+            left: 0;
+
+            @include mobile{
+                width: rem(227);
+            }
+        }
+    }
+
+    &__link{
+        position: relative;
+        padding: rem(20);
+        width: rem(187);
+        font-size: rem(18);
+        
+
+        &::after{
+            position: absolute;
+            content: '';
+            width: rem(43);
+            height: rem(43);
+            background-color: var(--color-base);
+            right: 0;
+            bottom: 0;
+            transform: translate(50%,50%);
+            z-index: -1;
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            width: rem(43);
+            height: rem(43);
+            background-color: var(--color-black-accent);
+            left: 0;
+            top: 0;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+    }
+
+    &--right{
+        text-align: end;
+        h2{
+            &::after{
+            left: unset;
+            right: 0;
+        }
+        }
+     }
+     &--link{
+        p{
+            font-size: rem(18);
+            line-height: rem(21);
+        }
+     }
+
+    
+}

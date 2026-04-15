@@ -1,0 +1,73 @@
+@use '../helpers' as *;
+
+.footer{
+    background-color: var(--color-black-accent);
+
+    
+    &__inner{    
+        color: var(--color-white);
+    }
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+        gap: rem(40);
+        padding: rem(240) rem(182) rem(140) rem(182);
+        @include laptop{
+            flex-direction: column;
+            padding: rem(100) 0 rem(140) 0;
+        }
+        @include mobile-s{
+            padding-block: rem(80);
+        }
+
+        &-logo{
+            display: flex;
+            flex-direction: column;
+            gap: rem(16);
+            width: rem(305);  
+        }
+        &-title{
+            font-weight: 500;
+            padding-bottom: rem(16);
+        }
+        &-list{
+            display: grid;
+            gap: rem(12);
+
+            a{
+                font-size: rem(18);
+                position: relative;
+
+                &::before{
+                content: '';
+                position: absolute;
+                width: 100%;
+                height: rem(3);
+                background-color: var(--color-orange);
+                bottom: -4px;
+                left: 0;
+                transform-origin: right;
+                transform: scaleX(0);
+                transition: transform 0.3s ease-in-out;
+                }
+             &:hover::before{
+                transform-origin: left;
+                transform: scaleX(1);
+                }
+            }
+        }
+
+        &-soc1als{
+            display: flex;
+            gap: rem(24);
+            align-items: center;
+        }
+        
+    }
+    &__cpr{
+        font-size: rem(14);
+        line-height: rem(17);
+    }
+    
+    
+}

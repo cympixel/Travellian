@@ -1,0 +1,118 @@
+@use '../helpers' as *;
+.card-2 {
+    position: relative;
+    width: fluid(497, 343);
+    height: fluid(629, 560);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius:  var(--radius-img) var(--radius-img) rem(35) rem(35);
+    background-position: 0% 0%;
+
+     @include tablet{
+        background-size: cover;
+        background-position: 0% 0%;
+        width: 100% !important; 
+        }
+    @include mobile-s{
+        min-height: rem(675);
+    }
+
+    
+    &--1{
+        background-image: url(../img/slider-2/1.webp);
+        @include tablet{
+            background-position: 0% -150px;
+        }
+        @include mobile-s{
+        background-position: 0% -100px;
+    }
+    }
+    &--2{
+        background-image: url(../img/slider-2/2.webp);
+        @include tablet{
+            background-position: 0 -100px;
+        }
+        @include mobile-s{
+        background-position: 45% -150px;
+    }
+    }
+    &--3{
+        background-image: url(../img/slider-2/3.webp);
+        @include mobile-s{
+        background-position: 40% -150px;
+    }
+    }
+
+    &__info{
+        position: absolute;
+        padding: rem(40) rem(24);
+        background-color: #FFF8F1;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        color: var(--color-black-accent);
+        border-radius: 0 0 var(--radius-img) var(--radius-img);
+
+        display: grid;
+        gap: rem(24);
+
+        @include mobile{
+            padding: rem(20) rem(24);
+        }
+        @include mobile-s{
+            padding: rem(20);
+        
+        }
+        
+    }
+    &__title{
+        display: grid;
+        gap: rem(8);
+
+        h3{
+            color: var(--color-base);
+            font-family: var(--third-family);
+        }
+    }
+    
+    &__text{
+        font-size: rem(18);
+        line-height: rem(21);
+    }
+    &__details{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include mobile-s{
+            flex-direction: column;
+            align-items: start;
+            gap: rem(20);
+        }
+    }
+    &__price{
+        display: flex;
+        align-items: center;
+        gap: rem(8);
+        color: var(--color-base);
+
+        
+    }
+    &__value {
+        font-size: fluid(40,28);
+        color: var(--color-orange);
+
+        @include mobile{
+            font-size: rem(32);
+        }
+    }   
+    &__btn {
+        padding: rem(20) rem(40);
+        text-transform: uppercase;
+    }
+
+}
+
+
+
+

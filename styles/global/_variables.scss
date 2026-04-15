@@ -1,0 +1,23 @@
+@use "../helpers" as *;
+
+:root{
+   
+	--color-white: #ffff;
+    --color-base: #767E86;
+    --color-black-accent: #172432;
+    --color-orange: #FF7757;
+
+    
+    --font-family-base: "Rubik", sans-serif;
+    --second-family: "Playfair Display", sans-serif;
+    --third-family: "Mulish", sans-serif;
+
+    --container-width:#{rem(1556)};
+    --container-padding-x:#{rem(16)};
+
+    --transition-duration:0.3s;
+
+    --radius-btns: 12px;
+    --radius-img: 26px;
+
+}
