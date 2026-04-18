@@ -1,7 +1,10 @@
 @use '../helpers' as *;
 
 .header{
-    background-image: url(../img/bg.webp);
+    background-image: image-set(
+        url('../img/bg.webp') type('image/webp'),
+        url('../img/bg.jpg') type('image/jpeg')
+    );
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

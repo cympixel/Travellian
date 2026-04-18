@@ -8,6 +8,7 @@
     @include mobile{
         padding-block: rem(80);
     }
+    
     &__inner{
         display: flex;
         flex-direction: column;
