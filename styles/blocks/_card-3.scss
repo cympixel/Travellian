@@ -23,28 +23,40 @@
     }
     
     &--1{
-        background-image: url(../img/slider-3/1.webp);
+        background-image: image-set(
+                url('../img/slider-3/1.webp') type('image/webp'),
+                url('../img/slider-3/1.jpeg') type('image/jpeg'), 
+            );
         background-position: 40% 0%;
         @include tablet{
             background-position: 0% 50%;
         }
     }
     &--2{
-        background-image: url(../img/slider-3/2.webp);
+        background-image: image-set(
+                url('../img/slider-3/2.webp') type('image/webp'),
+                url('../img/slider-3/2.jpeg') type('image/jpeg'), 
+            );
         background-position: 40% 0%;
         @include tablet{
             background-position: 0% 50%;
         }
     }
     &--3{
-        background-image: url(../img/slider-3/3.webp);
+        background-image: image-set(
+                url('../img/slider-3/3.webp') type('image/webp'),
+                url('../img/slider-3/3.jpeg') type('image/jpeg'), 
+            );
         background-position: 40% 0%;
         @include tablet{
             background-position: 0% 50%;
         }
     }
     &--4{
-        background-image: url(../img/slider-3/4.webp);
+        background-image: image-set(
+                url('../img/slider-3/4.webp') type('image/webp'),
+                url('../img/slider-3/4.jpeg') type('image/jpeg'), 
+            );
         background-position: 40% 0%;
         @include tablet{
             background-position: 0% 50%;
