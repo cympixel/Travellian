@@ -1,0 +1,44 @@
+@use '../helpers' as *;
+
+.swiper-1, .swiper-2, .swiper-5{
+    width: 100% !important;
+    overflow: hidden !important;
+}
+.swiper-slide{
+    width: auto !important; 
+    @include tablet{
+         width: 100% !important;
+    }
+}
+.swiper-3{
+    width: 100%;
+    @include tablet{
+        .swiper-wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 20px; 
+        }
+          .swiper-slide {
+          height: auto;
+          padding-bottom: rem(203);
+        }
+    }
+}
+.swiper-4{
+  width: 100%;
+  overflow-x: hidden;
+  padding-top: 37px;
+  @include tablet{
+        .swiper-wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 32px; 
+        }
+          .swiper-slide {
+          height: auto;
+        }
+    }
+}
+.swiper-5{
+  padding-top: rem(65);
+}

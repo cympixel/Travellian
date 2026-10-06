@@ -1,0 +1,42 @@
+@use '../helpers' as *;
+
+.card-5{
+    position: relative;
+    width: fluid(663, 500);
+    background-color: #F5F6F7;
+    border-radius: rem(20);
+
+    @include mobile{
+        width: 100%;
+    }
+    
+
+    &__icon{
+        position: absolute;
+        top: -65px;
+        left: rem(40);
+        width: 100px;
+        height: 100px;
+        img{
+            border-radius: 50%;
+        }
+    }
+
+    &__info{
+        padding: rem(60) rem(40) rem(40) rem(40);
+        display: grid;
+        gap: rem(20);
+    }
+
+    &__person{
+        display: grid;
+        gap: rem(4);
+    }
+    &__name{
+        font-family: var(--second-family);
+        font-size: rem(24);
+    }
+    &__prof{
+        font-size: rem(18);
+    }
+}
