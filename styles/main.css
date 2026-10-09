@@ -399,6 +399,8 @@ h4 :focus-visible {
   padding: 1.25rem 2rem;
   border-radius: var(--radius-btns);
   transition-duration: 0.3s;
+  background-color: transparent;
+  color: inherit;
 }
 .header__login:hover {
   background-color: #e04523;
@@ -1092,7 +1094,6 @@ h4 :focus-visible {
   }
 }
 .card-3__info {
-  width: 18.75rem;
   position: absolute;
   bottom: 0;
   visibility: hidden;
@@ -1100,6 +1101,7 @@ h4 :focus-visible {
   transition: all 0.3s ease;
   display: grid;
   gap: 0.75rem;
+  width: 100%;
 }
 .card-3__info-top {
   display: flex;

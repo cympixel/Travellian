@@ -69,7 +69,6 @@
     
 
     &__info{
-        width: rem(300);
         position: absolute;
         bottom: 0;
         visibility: hidden;
@@ -79,11 +78,12 @@
 
         display: grid; 
         gap: rem(12);
+         width: 100%;
 
         &-top{
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: center;           
         }
         &-bottom{
             display: flex;
